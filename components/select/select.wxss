@@ -1,0 +1,14 @@
+/* components/select/select.wxss */
+.box{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 999;}
+.select{width: 100vw;height: 1000rpx;background: white;position: absolute;bottom: 0;left: 0;padding: 40rpx 30rpx;box-sizing: border-box}
+.shade{width: 100%;height: 100vh;background: rgba(0,0,0,.3)}
+.title{font-size: 36rpx;color: #333;font-weight: bold;position: relative;width: 100%}
+.title image{width: 24rpx;height: 24rpx;position: absolute;right: 0rpx;top: 7rpx}
+.choice{display: flex;justify-content: flex-start;}
+.choice view{margin: 0 30rpx;line-height: 72rpx;font-size: 26rpx;}
+.choice view.active{color: #86B93F;border-bottom: 2rpx solid #86B93F}
+.choice view.active1{font-size: 50rpx}
+.list{font-size: 26rpx;line-height: 66rpx;padding-left: 34rpx}
+.list-item{color: red}
+.listActive{color:#86B93F }
+.select-list image{width: 27rpx;height: 19rpx;margin-left: 10rpx}

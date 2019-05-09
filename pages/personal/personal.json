@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "v-select":"/components/select/select"
+  },
+  "navigationBarTitleText": "仿京东地址选择",
+  "enablePullDownRefresh": true
+
+} 

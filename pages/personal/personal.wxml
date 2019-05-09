@@ -1,0 +1,5 @@
+<view class='info'>
+<view><text>地区：</text><input name="name" value='{{city.value}}' disabled='true' bindtap='cityFocus'  placeholder='请选择所在地区（必填）'/></view>
+</view>
+<!-- 引用的组件 -->
+<v-select current="{{city}}"  bind:parentEvent='city' />

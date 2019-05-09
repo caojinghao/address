@@ -1,0 +1,23 @@
+<view class='box' wx:if="{{current.show}}">
+<view class='select'>
+<!-- 选择地区标题 -->
+<view class='title'>{{publicObj.title}}<image bindtap='close' src="../img/zhuxezuanzeguanbi@2x.png" /></view>
+<view class='choice'>
+<!-- 已经选择的地区 -->
+<view wx:for="{{publicObj.selected}}" class='{{publicObj.page==index?"active":""}}'  bindtap='choice' data-item="{{item.select}}" data-index="{{index}}" wx:key="unique">{{item.select}}</view>
+<!-- 点击选择的地区 -->
+<view wx:if="{{publicObj.multipleChoice }}" class='active'>{{select}}</view>
+</view>
+<!-- 滑动效果 -->
+  <scroll-view scroll-y="true" style="height: 800rpx;" class='list'>
+    <!-- 循环出要出现的地区 -->
+      <view wx:for="{{publicObj.pageList}}"  data-id="{{item.c}}" data-item="{{item.n||item}}" data-index="{{index}}" wx:key="unique" bindtap='select' class='select-list {{publicObj.selected[publicObj.page].key==index?"listActive":""}}'>
+      {{item.n||item}}
+      <!-- 地区后面的对勾 -->
+      <image wx:if='{{publicObj.selected[publicObj.page].key==index?"listActive":""}}' src='../img/dui.png' />
+      </view>
+  </scroll-view>
+</view>
+<!-- 弹窗的遮罩、 -->
+<view class='shade' bindtap="close"></view>
+</view>

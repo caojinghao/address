@@ -1,0 +1,6 @@
+/* pages/personal/personal.wxss */
+.info{padding: 0 4%;font-size: 26rpx;color: #333}
+.info text{width: 19.3%;display: inline-block;line-height: 96rpx}
+.info view input{display: inline-block;height: 96rpx;vertical-align:bottom;width:73.66%;}
+.info view {position: relative;border-bottom: 1px solid #F2F4F7;height: 96rpx}
+.info view image{width: 26rpx;height: 26rpx;position: absolute;right: 0;top:16rpx;padding: 20rpx }
